@@ -1,10 +1,10 @@
 # require modules here
 
 require 'yaml'
+loaded = YAML.load_file(path)
 
 def load_library(path)
   # code goes here
-  loaded = YAML.load_file(path)
   hash = {
   	"get_emoticon" => {}, 
   	"get_meaning" => {}
